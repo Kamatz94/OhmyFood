@@ -196,7 +196,6 @@ img {
   font-size: 2.5rem;
 }
 
-
 .logo {
   text-align: center;
   padding: 1rem;
@@ -215,8 +214,6 @@ img {
   height: 350px;
   object-fit: cover;
 }
-
-
 
 .section_picture {
   background-color: #f6f6f6;
@@ -442,29 +439,29 @@ form .nav-container {
 }
 
 form .search {
-   display: flex;
-   border: none;
-   background-color: #EAEAEA;
-   height: 1.5rem;
-   height: 3rem;
+  display: flex;
+  border: none;
+  background-color: #EAEAEA;
+  height: 1.5rem;
+  height: 3rem;
 }
 
 form .search::placeholder {
-   font-size: 2rem;
-   color: black;
-   padding-left: 1rem;
-   font-weight: 700;
-   height: auto;
-   width: 100%;
+  font-size: 2rem;
+  color: black;
+  padding-left: 1rem;
+  font-weight: 700;
+  height: auto;
+  width: 100%;
 }
 
 .nav_container_text {
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
-   padding: 3rem 1rem;
-   background-color: #F6F6F6;
-   width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #F6F6F6;
+  width: 100%;
 }
 
 .nav_container_text h1 {
@@ -474,10 +471,6 @@ form .search::placeholder {
 .nav_container_text p {
   margin-bottom: 2rem;
 }
-
-
-
-
 
 /*##################################################### FOOTER #####################################################*/
 footer {
@@ -498,8 +491,6 @@ footer .logo_footer {
 footer ul {
   padding-bottom: 3rem;
 }
-
-
 
 footer ul li {
   margin: 0.5rem 2rem;
@@ -523,28 +514,28 @@ footer ul li a:hover {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  .section_picture {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
+.section_picture {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
 
-   .section_picture .menu_1,
-   .section_picture .menu_2,
-   .section_picture .menu_3,
-   .section_picture .menu_4 {
-    width: 40%;
-  }
+.section_picture .menu_1,
+.section_picture .menu_2,
+.section_picture .menu_3,
+.section_picture .menu_4 {
+  width: 40%;
+}
 
 
-   footer .logo_footer {
-    text-align: center;
-  }
+footer .logo_footer {
+  text-align: center;
+}
 
-  footer ul {
-    display: flex;
-    justify-content: center;
-  }
+footer ul {
+  display: flex;
+  justify-content: center;
+}
 
 }
 
@@ -552,79 +543,79 @@ footer ul li a:hover {
 
 @media (min-width: 1025px) {
   .menu_fonction {
-      display: flex;
-      width: 90%;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      gap: 3rem;
-      white-space: nowrap;
-   }
-
-  .page_menu {
-      width: 100%;
+    display: flex;
+    width: 90%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 3rem;
+    white-space: nowrap;
   }
 
-  .page_menu_titre {
-      padding: 8rem 0rem;
-  }
+.page_menu {
+  width: 100%;
+}
 
-  .page_menu_titre {
-      justify-content: space-evenly;
-      width: 100%;
-      padding-bottom: 3rem;
-      margin: 0;
-   }
+.page_menu_titre {
+  padding: 8rem 0rem;
+}
 
-  .compo {
-      display: flex;
-      gap: 1rem;
-      justify-content: space-between;
-   }
+.page_menu_titre {
+  justify-content: space-evenly;
+  width: 100%;
+  padding-bottom: 3rem;
+  margin: 0;
+}
 
-  .compo_menu_texte {
-      width: 380px;
-      font-size: 1.3rem;
-  }
+.compo {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
 
-  .compo_menu_choix {
-      font-size: 1.6rem;
-  }
+.compo_menu_texte {
+  width: 380px;
+  font-size: 1.3rem;
+}
 
-  .fonction h1 {
-      text-align: center;
-   }
+.compo_menu_choix {
+  font-size: 1.6rem;
+}
 
-  .section_picture {
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 3rem;
-  }
+.fonction h1 {
+  text-align: center;
+}
 
-   .section_picture h2 {
-      text-align: center;
-      font-size: 4rem;
-  }
+.section_picture {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
 
-   .section_picture .menu_1,
-   .section_picture .menu_2,
-   .section_picture .menu_3,
-   .section_picture .menu_4 {
-      width: 40%;
-  }
+.section_picture h2 {
+  text-align: center;
+  font-size: 4rem;
+}
 
-  .image_menu {
-      height: 500px;
-  }
+.section_picture .menu_1,
+.section_picture .menu_2,
+.section_picture .menu_3,
+.section_picture .menu_4 {
+  width: 40%;
+}
 
-  footer .logo_footer {
-      text-align: center;
-  }
+.image_menu {
+  height: 500px;
+}
 
-  footer ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-  }
+footer .logo_footer {
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
 }

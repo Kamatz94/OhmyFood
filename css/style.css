@@ -386,6 +386,7 @@ p {
   height: 2rem;
 }
 
+/*######### LIKE ANIMATION #########*/
 .like {
   display: flex;
   align-content: normal;

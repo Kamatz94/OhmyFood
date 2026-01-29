@@ -116,6 +116,76 @@ img {
   padding: 0.5rem;
 }
 
+.loader {
+  background: linear-gradient(#9356DC, #99E2D0);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  animation: loader 6s;
+  animation-fill-mode: both;
+}
+.loader i {
+  margin: 2rem;
+  color: #99e2d0;
+}
+.loader .loading {
+  padding-top: 30rem;
+  text-align: center;
+  color: white;
+  font-size: 4em;
+  font-family: "Shrikhand", sans-serif;
+  animation: cssload-breathe 3.05s ease infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes loader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+.animForm {
+  margin: 100px auto 0;
+  width: 170px;
+  text-align: center;
+}
+
+.animForm > div {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  background-color: #333;
+  border-radius: 50% 50% 50% 0;
+  display: inline-block;
+  animation: sk-dropdelay 1.4s infinite ease-in-out both;
+}
+
+.animForm .drop1 {
+  animation-delay: -0.32s;
+  background-color: #ff79da;
+}
+
+.animForm .drop2 {
+  animation-delay: -0.16s;
+  background-color: #9356dc;
+}
+
+.animForm .drop3 {
+  background-color: #99e2d0;
+}
+
+@keyframes sk-dropdelay {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
 @keyframes vide {
   0% {
     opacity: 1;

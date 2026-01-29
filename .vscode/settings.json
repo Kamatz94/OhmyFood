@@ -1,0 +1,12 @@
+{
+  "name": "projet-ohmyfood-responsive",
+  "version": "1.0.0",
+  "description": "Projet front-end avec Sass et mise en page responsive",
+  "scripts": {
+    "sass": "sass --watch scss:css",
+    "start": "npm run sass"
+  },
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}

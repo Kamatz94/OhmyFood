@@ -107,10 +107,8 @@ img {
   right: 15px;
 }
 
-.menu_1,
-.menu_2,
-.menu_3,
-.menu_4 {
+
+.menu {
   height: 300px;
   width: 100%;
   padding: 0.5rem;
@@ -233,10 +231,7 @@ img {
   width: 100%;
 }
 
-.section_picture .menu_1,
-.section_picture .menu_2,
-.section_picture .menu_3,
-.section_picture .menu_4 {
+.section_picture .menu {
   position: relative;
   height: auto;
   width: 100%;
@@ -244,10 +239,7 @@ img {
   margin: 1rem;
 }
 
-.section_picture .menu_1:hover,
-.section_picture .menu_2:hover,
-.section_picture .menu_3:hover,
-.section_picture .menu_4:hover {
+.section_picture .menu:hover {
   box-shadow: 1px 3px 12px 4px #9356dc;
   border-radius: 25px;
 }
@@ -529,10 +521,7 @@ footer ul li a:hover {
     gap: 2rem;
   }
 
-   .section_picture .menu_1,
-   .section_picture .menu_2,
-   .section_picture .menu_3,
-   .section_picture .menu_4 {
+   .section_picture .menu {
     width: 40%;
   }
 
@@ -605,10 +594,7 @@ footer ul li a:hover {
       font-size: 4rem;
   }
 
-   .section_picture .menu_1,
-   .section_picture .menu_2,
-   .section_picture .menu_3,
-   .section_picture .menu_4 {
+   .section_picture .menu {
       width: 40%;
   }
 

@@ -255,6 +255,51 @@ img {
   animation: apparition 2s 0.6s backwards;
 }
 
+/*######### ANIMATION DES MENUS FADING ET MOUVEMENT VERS LE HAUT #########*/
+
+.compo_menu_entree {
+  opacity: 0; 
+  transform: translateY(40px); 
+  animation: fadeInUp 0.7s cubic-bezier(0.25, 0.8, 0.3, 1.4) forwards;
+}
+
+.entree { 
+  animation-delay: 0.5s; 
+} 
+
+.compo_menu_plat {
+  opacity: 0; 
+  transform: translateY(40px); 
+  animation: fadeInUp 5s cubic-bezier(0.25, 0.8, 0.3, 1.4) forwards;
+}
+
+.plat { 
+  animation-delay: 3.5s; 
+} 
+
+.compo_menu_dessert {
+  opacity: 0; 
+  transform: translateY(40px); 
+  animation: fadeInUp 10s cubic-bezier(0.25, 0.8, 0.3, 1.4) forwards;
+}
+.dessert { 
+  animation-delay: 7.5s; 
+}
+
+
+/*########### ANIMATION AVEC UN LEGER ZOOM ###########*/ 
+
+@keyframes fadeInUp { 
+  from { 
+    opacity: 0; 
+    transform: translateY(40px) scale(0.98);  
+  } 
+  to { 
+    opacity: 1; 
+    transform: translateY(0) scale(1); 
+  }
+}
+
 .logo {
   display: flex;
   justify-content: center;

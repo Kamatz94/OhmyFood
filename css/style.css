@@ -11,7 +11,7 @@ html {
 body {
   font-family: Roboto, sans-serifxt-font;
   font-size: 1.6rem;
-  background-color: #F6F6F6;
+  /*background-color: #F6F6F6;*/
 }
 
 ul {
@@ -250,37 +250,32 @@ img {
 }
 
 /*######### ANIMATION DES MENUS FADING ET MOUVEMENT VERS LE HAUT #########*/
+.compo_menu_entree,
+.compo_menu_plat,
+.compo_menu_dessert {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.6s ease forwards;
+}
 
 .compo_menu_entree {
-  opacity: 0; 
-  transform: translateY(40px); 
-  animation: fadeInUp 0.7s cubic-bezier(0.25, 0.8, 0.3, 1.4) forwards;
+  animation-delay: 0.4s;
 }
-
-.entree { 
-  animation-delay: 0.5s; 
-} 
 
 .compo_menu_plat {
-  opacity: 0; 
-  transform: translateY(40px); 
-  animation: fadeInUp 5s cubic-bezier(0.25, 0.8, 0.3, 1.4) forwards;
+  animation-delay: 0.8s;
 }
-
-.plat { 
-  animation-delay: 3.5s; 
-} 
 
 .compo_menu_dessert {
-  opacity: 0; 
-  transform: translateY(40px); 
-  animation: fadeInUp 10s cubic-bezier(0.25, 0.8, 0.3, 1.4) forwards;
-}
-.dessert { 
-  animation-delay: 7.5s; 
+  animation-delay: 1.2s;
 }
 
-
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /*########### ANIMATION AVEC UN LEGER ZOOM ###########*/ 
 
 @keyframes fadeInUp { 
@@ -416,7 +411,7 @@ p {
   font-family: Shrikhand, cursive;
   justify-content: space-between;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.75rem;
   height: 2rem;
 }
 
@@ -448,7 +443,7 @@ p {
   position: absolute;
   opacity: 0;
   background: linear-gradient(to top, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   transform-origin: bottom;
   transform: scale(0);
@@ -505,6 +500,7 @@ p {
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
+  max-width: 634px;
 }
 
 .compo_menu_choix {
@@ -543,7 +539,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 7rem;
@@ -629,7 +625,7 @@ form .search::placeholder {
 footer {
   display: flex;
   flex-direction: column;
-  padding-top: 1rem;
+  padding-top: 5rem;
   background-color: #353535;
   color: white;
   width: 100%;
@@ -700,14 +696,16 @@ footer ul {
   .menu_fonction {
     display: flex;
     width: 83%;
-    flex-wrap: nowrap;
+    /*flex-wrap: nowrap;*/
     justify-content: space-between;
     gap: 3rem;
     white-space: nowrap;
   }
 
 .page_menu {
-  width: 100%;
+  display: flex;
+  justify-self: center;
+  width: 50%;
 }
 
 .page_menu_titre {
@@ -723,13 +721,29 @@ footer ul {
 
 .compo {
   display: flex;
-  gap: 1rem;
-  justify-content: space-between;
+  flex-direction: column;
+  /*flex-wrap: wrap;*/
+  /*gap: 1rem;*/
+  justify-self: center;
+  background-color: #FFFFFF;
+  margin: 0rem;
+  width: 50%;
+}
+
+
+.compo_menu {
+  display: flex;
+  margin: 0.0rem;
+  background-color: #F6F6F6;
+  padding: 0.2rem;
+  width: 100%;
+  justify-content: center;
 }
 
 .compo_menu_texte {
-  width: 380px;
+  width: 100%;
   font-size: 1.3rem;
+  max-width: 634px;
 }
 
 .compo_menu_choix {
@@ -760,6 +774,11 @@ footer ul {
   height: 500px;
 }
 
+.commande {
+  width: 50%;
+  justify-self: center;
+}
+
 footer .logo_footer {
   text-align: center;
 }
@@ -768,7 +787,7 @@ footer ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
 
 }

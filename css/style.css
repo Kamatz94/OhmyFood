@@ -152,12 +152,11 @@ img {
 }
 
 .animForm > div {
-  width: 40px;
-  height: 40px;
-  margin: 10px;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0.625rem;
   background-color: #333;
-  /*border-radius: 50% 50% 50% 0; Gouttes*/ 
-  clip-path: path("M24.5 3.5c-3.5 0-6.5 2.2-7.5 5.3C15.9 5.7 12.9 3.5 9.5 3.5 4.8 3.5 1 7.3 1 12c0 8.3 11.5 14.8 16 18.5 4.5-3.7 16-10.2 16-18.5 0-4.7-3.8-8.5-8.5-8.5z");
+  border-radius: 50% 50% 50% 50%; /*Gouttes*/
   display: inline-block;
   animation: move-left-right 1.4s infinite ease-in-out both;
 }
@@ -173,7 +172,7 @@ img {
 }
 
 .animForm .drop3 {
-  background-color: #99e2d0;
+  background-color: #99E2D0;
 }
 
 @keyframes sk-dropdelay {
@@ -393,12 +392,17 @@ h3 {
   font-weight: 900;
 }
 
-h4 {
+h2 {
   margin: 0.2rem;
   padding: 0.2rem;
   font-size: 1.33rem;
   font-weight: 700;
   padding-bottom: 0.5rem;
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-color: #99E2D0; /* Couleur */ 
+  text-decoration-thickness: 3px; /* Epaisseur */
+  text-underline-offset: 8px; /* Espace entre le texte et la ligne */
 }
 
 p {
@@ -491,11 +495,11 @@ p {
 .compo_menu_titre {
   padding-bottom: 0.2rem;
   margin: 0.2rem 1rem;
-  text-decoration: underline;
+/*  text-decoration: underline;
   text-decoration-line: underline;
-  text-decoration-color: #99E2D0; /* couleur */ 
-  text-decoration-thickness: 3px; /* épaisseur */
-  text-underline-offset: 8px; /* espace entre le texte et la ligne */
+  text-decoration-color: #99E2D0; /* Couleur */ 
+/*  text-decoration-thickness: 3px; /* Epaisseur */
+/*  text-underline-offset: 8px; /* Espace entre le texte et la ligne */
   width: 95%;
 }
 
@@ -562,7 +566,7 @@ p {
   border-radius: 25px;
   background-color: white;
   padding: 0.3rem;
-  color: #99e2d0;
+  color: #99E2D0;
 }
 
 .commande {

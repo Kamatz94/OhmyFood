@@ -11,7 +11,6 @@ html {
 body {
   font-family: Roboto, sans-serifxt-font;
   font-size: 1.6rem;
-  /*background-color: #F6F6F6;*/
 }
 
 ul {
@@ -107,13 +106,13 @@ img {
   right: 15px;
 }
 
-
 .menu {
   height: 300px;
   width: 100%;
   padding: 0.5rem;
 }
 
+/*##################################################### LOADER & ANIMATION #####################################################*/
 .loader {
   background: linear-gradient(#9356DC, #99E2D0);
   position: fixed;
@@ -123,10 +122,12 @@ img {
   animation: loader 6s;
   animation-fill-mode: both;
 }
+
 .loader i {
   margin: 2rem;
   color: #99E2D0;
 }
+
 .loader .loading {
   padding-top: 30rem;
   text-align: center;
@@ -156,7 +157,7 @@ img {
   height: 3.5rem;
   margin: 0.625rem;
   background-color: #333;
-  border-radius: 50% 50% 50% 50%; /*Gouttes*/
+  border-radius: 50% 50% 50% 50%; /*Boules*/
   display: inline-block;
   animation: move-left-right 1.4s infinite ease-in-out both;
 }
@@ -289,6 +290,7 @@ img {
     transform: translateY(0) scale(1); 
   }
 }
+/*####################################################*/
 
 .logo {
   display: flex;
@@ -439,20 +441,24 @@ p {
   margin-bottom: 1rem;
   padding-right: 1rem;
 }
+
 .like .far {
   font-size: 3rem;
   position: absolute;
 }
+
 .like .far:hover {
   cursor: pointer;
   z-index: 2;
   animation: vide 1s forwards linear;
 }
+
 .like .far:hover + i {
   opacity: 1;
   transform: scale(1);
   transition: 1s linear;
 }
+
 .like .fas {
   position: absolute;
   opacity: 0;
@@ -469,6 +475,7 @@ p {
   align-items: stretch;
   height: 3rem;
 }
+/*######### COMPOSANTS DES MENUS #########*/
 
 .compo {
   margin: 0.2rem;
@@ -495,11 +502,6 @@ p {
 .compo_menu_titre {
   padding-bottom: 0.2rem;
   margin: 0.2rem 1rem;
-/*  text-decoration: underline;
-  text-decoration-line: underline;
-  text-decoration-color: #99E2D0; /* Couleur */ 
-/*  text-decoration-thickness: 3px; /* Epaisseur */
-/*  text-underline-offset: 8px; /* Espace entre le texte et la ligne */
   width: 95%;
 }
 
@@ -647,7 +649,6 @@ footer {
 
 footer .logo_footer {
   color: white;
-  /*margin: 2rem;*/
   font-family: Shrikhand, cursive;
 }
 
@@ -677,30 +678,28 @@ footer ul li a:hover {
 /*### REVOIR LE CENTRAGE DES MENUS SUR CETTE PARTIE ###*/
 @media (min-width: 768px) and (max-width: 1024px) {
 
-.btn_menu {
-  width: 90%;
-}
+  .btn_menu {
+    width: 90%;
+  }
 
-.section_picture {
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
+  .section_picture {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 
+  .section_picture .menu {
+    width: 40%;
+  }
 
-.section_picture .menu {
-  width: 40%;
-}
+  footer .logo_footer {
+    text-align: center;
+  }
 
-
-footer .logo_footer {
-  text-align: center;
-}
-
-footer ul {
-  display: flex;
-  justify-content: center;
-}
+  footer ul {
+    display: flex;
+    justify-content: center;
+  }
 
 }
 
@@ -738,8 +737,6 @@ footer ul {
   .compo {
     display: flex;
     flex-direction: column;
-    /*flex-wrap: wrap;*/
-    /*gap: 1rem;*/
     justify-self: center;
     background-color: #FFFFFF;
     margin: 0rem;
@@ -808,7 +805,6 @@ footer ul {
     text-align: center;
     margin: 2rem;
   }
-
 
   footer ul {
     display: flex;

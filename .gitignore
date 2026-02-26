@@ -1,0 +1,12 @@
+# --- Système / OS ---
+.DS_Store
+Thumbs.db
+
+# --- Éditeurs ---
+.vscode/
+.idea/
+
+# --- Dossiers générés ---
+Documentations/
+Validation W3C/
+

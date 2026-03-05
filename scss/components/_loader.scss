@@ -1,0 +1,36 @@
+.loader {
+  background: linear-gradient($color-primary, $color-tertiary);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  animation: loader 6s both;
+
+  .loading {
+    padding-top: 30rem;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    font-family: $font-title;
+    animation: cssload-breathe 3s ease infinite;
+  }
+}
+
+.animForm {
+  margin: 100px auto 0;
+  width: 170px;
+  text-align: center;
+
+  > div {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0.625rem;
+    border-radius: 50%;
+    display: inline-block;
+    animation: move-left-right 1.4s infinite ease-in-out both;
+  }
+
+  .drop1 { animation-delay: -0.32s; background-color: $color-secondary; }
+  .drop2 { animation-delay: -0.16s; background-color: $color-primary; }
+  .drop3 { background-color: $color-tertiary; }
+}

@@ -1,0 +1,11 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  background-color: #353535;
+  color: white;
+
+  ul li a:hover {
+    color: $color-secondary;
+  }
+}

@@ -1,0 +1,21 @@
+.compo_menu_texte {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: 0.8rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #D4D4D4;
+  animation: fadeInUp 0.6s ease forwards;
+
+  &:hover .compo_menu_check_icon {
+    transform: translateX(-75%);
+    transition: ease-in-out 300ms;
+    opacity: 1;
+  }
+
+  &:hover .compo_menu_check_icon i {
+    transform: rotate(360deg);
+    transition: ease-out 600ms;
+  }
+}

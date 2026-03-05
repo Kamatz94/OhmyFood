@@ -1,0 +1,31 @@
+.like {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 3rem;
+  padding-right: 1rem;
+
+  .far {
+    position: absolute;
+
+    &:hover {
+      cursor: pointer;
+      animation: vide 1s forwards linear;
+
+      + i {
+        opacity: 1;
+        transform: scale(1);
+        transition: 1s linear;
+      }
+    }
+  }
+
+  .fas {
+    position: absolute;
+    opacity: 0;
+    background: linear-gradient(to top, $color-secondary, $color-primary);
+    background-clip: text;
+    color: transparent;
+    transform-origin: bottom;
+    transform: scale(0);
+  }
+}

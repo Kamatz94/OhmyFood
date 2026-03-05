@@ -1,0 +1,49 @@
+.btn {
+  background: linear-gradient(to bottom, $color-secondary, $color-primary);
+  border: none;
+  border-radius: $radius-large;
+  color: white;
+  margin: 2rem;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  width: 25rem;
+  box-shadow: $shadow-default;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: $shadow-hover;
+    opacity: 0.8;
+  }
+}
+
+.btn_menu {
+  width: 90%;
+  background-color: $color-light;
+  border-radius: $radius-large;
+  padding: 0.5rem;
+  margin: 1rem 0.5rem;
+  font-weight: 700;
+  border: none;
+  text-align: left;
+  box-shadow: $shadow-default;
+
+  &:hover {
+    background-color: #F5EDFF;
+
+    i { color: $color-primary; }
+  }
+
+  span {
+    background-color: $color-primary;
+    color: white;
+    border-radius: 20px;
+    padding: 3px 8px;
+    font-size: 1.7rem;
+  }
+
+  i {
+    color: #706F6F;
+    margin-right: 2.5rem;
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,7 @@
+@include respond(tablet) {
+  .section_picture { flex-direction: row; flex-wrap: wrap; gap: 2rem; }
+}
+
+@include respond(desktop) {
+  .section_picture { flex-direction: row; gap: 3rem; }
+}

@@ -55,7 +55,7 @@ img {
   font-weight: 700;
   border: none;
   text-align: left;
-  width: 90%;
+  /*width: 90%;*/
 }
 
 .btn_menu span {
@@ -114,6 +114,7 @@ img {
 }
 
 .loader {
+  /*background-color: transparent;*/
   background: linear-gradient(#9356DC, #99E2D0);
   position: fixed;
   height: 100%;
@@ -176,7 +177,7 @@ img {
 .animForm .drop3 {
   background-color: #99E2D0;
 }
-
+/*######### ANIMATION DES BOULES DE CHARGEMENT #########*/
 @keyframes sk-dropdelay {
   0%, 80%, 100% {
     transform: scale(0);
@@ -185,7 +186,7 @@ img {
     transform: scale(1);
   }
 }
-
+/*######### ANIMATION DU LIKE #########*/
 @keyframes vide {
   0% {
     opacity: 1;
@@ -197,7 +198,7 @@ img {
     opacity: 0;
   }
 }
-
+/*######### ANIMATION DU MENU LATERAL GAUCHE-DROITE #########*/
 @keyframes menuCheck {
   0% {
     opacity: 1;
@@ -431,7 +432,7 @@ p {
   height: 2rem;
 }
 
-/*######### LIKE ANIMATION #########*/
+/*######### LIKE #########*/
 .like {
   display: flex;
   align-content: normal;
